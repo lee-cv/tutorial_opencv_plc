@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/lee/Cpp/tutorial_opencv_plc/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/my_projects.dir/all
+all: CMakeFiles/pcl_io_tutorial.dir/all
+all: CMakeFiles/tutorial_opencv_pcl.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/my_projects.dir/clean
+clean: CMakeFiles/pcl_io_tutorial.dir/clean
+clean: CMakeFiles/tutorial_opencv_pcl.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/my_projects.dir
+# Target rules for target CMakeFiles/pcl_io_tutorial.dir
 
 # All Build rule for target.
-CMakeFiles/my_projects.dir/all:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/depend
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles --progress-num=1,2,3 "Built target my_projects"
-.PHONY : CMakeFiles/my_projects.dir/all
+CMakeFiles/pcl_io_tutorial.dir/all:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/depend
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles --progress-num=1,2 "Built target pcl_io_tutorial"
+.PHONY : CMakeFiles/pcl_io_tutorial.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/my_projects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my_projects.dir/all
+CMakeFiles/pcl_io_tutorial.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pcl_io_tutorial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles 0
-.PHONY : CMakeFiles/my_projects.dir/rule
+.PHONY : CMakeFiles/pcl_io_tutorial.dir/rule
 
 # Convenience name for target.
-my_projects: CMakeFiles/my_projects.dir/rule
+pcl_io_tutorial: CMakeFiles/pcl_io_tutorial.dir/rule
 
-.PHONY : my_projects
+.PHONY : pcl_io_tutorial
 
 # clean rule for target.
-CMakeFiles/my_projects.dir/clean:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/clean
-.PHONY : CMakeFiles/my_projects.dir/clean
+CMakeFiles/pcl_io_tutorial.dir/clean:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/clean
+.PHONY : CMakeFiles/pcl_io_tutorial.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tutorial_opencv_pcl.dir
+
+# All Build rule for target.
+CMakeFiles/tutorial_opencv_pcl.dir/all:
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/depend
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles --progress-num=3,4 "Built target tutorial_opencv_pcl"
+.PHONY : CMakeFiles/tutorial_opencv_pcl.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tutorial_opencv_pcl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tutorial_opencv_pcl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lee/Cpp/tutorial_opencv_plc/build/CMakeFiles 0
+.PHONY : CMakeFiles/tutorial_opencv_pcl.dir/rule
+
+# Convenience name for target.
+tutorial_opencv_pcl: CMakeFiles/tutorial_opencv_pcl.dir/rule
+
+.PHONY : tutorial_opencv_pcl
+
+# clean rule for target.
+CMakeFiles/tutorial_opencv_pcl.dir/clean:
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/clean
+.PHONY : CMakeFiles/tutorial_opencv_pcl.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

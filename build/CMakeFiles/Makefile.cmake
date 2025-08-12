@@ -123,5 +123,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/my_projects.dir/DependInfo.cmake"
+  "CMakeFiles/pcl_io_tutorial.dir/DependInfo.cmake"
+  "CMakeFiles/tutorial_opencv_pcl.dir/DependInfo.cmake"
   )

@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_projects
+# Target rules for targets named pcl_io_tutorial
 
 # Build rule for target.
-my_projects: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_projects
-.PHONY : my_projects
+pcl_io_tutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_io_tutorial
+.PHONY : pcl_io_tutorial
 
 # fast build rule for target.
-my_projects/fast:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/build
-.PHONY : my_projects/fast
+pcl_io_tutorial/fast:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/build
+.PHONY : pcl_io_tutorial/fast
+
+#=============================================================================
+# Target rules for targets named tutorial_opencv_pcl
+
+# Build rule for target.
+tutorial_opencv_pcl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tutorial_opencv_pcl
+.PHONY : tutorial_opencv_pcl
+
+# fast build rule for target.
+tutorial_opencv_pcl/fast:
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/build
+.PHONY : tutorial_opencv_pcl/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +142,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +151,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,35 +160,35 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/tutorial_opencv_pcl.dir/build.make CMakeFiles/tutorial_opencv_pcl.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/temp.o: src/temp.cpp.o
+src/pcl_tutorial/01_io.o: src/pcl_tutorial/01_io.cpp.o
 
-.PHONY : src/temp.o
+.PHONY : src/pcl_tutorial/01_io.o
 
 # target to build an object file
-src/temp.cpp.o:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/temp.cpp.o
-.PHONY : src/temp.cpp.o
+src/pcl_tutorial/01_io.cpp.o:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/src/pcl_tutorial/01_io.cpp.o
+.PHONY : src/pcl_tutorial/01_io.cpp.o
 
-src/temp.i: src/temp.cpp.i
+src/pcl_tutorial/01_io.i: src/pcl_tutorial/01_io.cpp.i
 
-.PHONY : src/temp.i
+.PHONY : src/pcl_tutorial/01_io.i
 
 # target to preprocess a source file
-src/temp.cpp.i:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/temp.cpp.i
-.PHONY : src/temp.cpp.i
+src/pcl_tutorial/01_io.cpp.i:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/src/pcl_tutorial/01_io.cpp.i
+.PHONY : src/pcl_tutorial/01_io.cpp.i
 
-src/temp.s: src/temp.cpp.s
+src/pcl_tutorial/01_io.s: src/pcl_tutorial/01_io.cpp.s
 
-.PHONY : src/temp.s
+.PHONY : src/pcl_tutorial/01_io.s
 
 # target to generate assembly for a file
-src/temp.cpp.s:
-	$(MAKE) -f CMakeFiles/my_projects.dir/build.make CMakeFiles/my_projects.dir/src/temp.cpp.s
-.PHONY : src/temp.cpp.s
+src/pcl_tutorial/01_io.cpp.s:
+	$(MAKE) -f CMakeFiles/pcl_io_tutorial.dir/build.make CMakeFiles/pcl_io_tutorial.dir/src/pcl_tutorial/01_io.cpp.s
+.PHONY : src/pcl_tutorial/01_io.cpp.s
 
 # Help Target
 help:
@@ -185,13 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... my_projects"
+	@echo "... pcl_io_tutorial"
+	@echo "... tutorial_opencv_pcl"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/temp.o"
-	@echo "... src/temp.i"
-	@echo "... src/temp.s"
+	@echo "... src/pcl_tutorial/01_io.o"
+	@echo "... src/pcl_tutorial/01_io.i"
+	@echo "... src/pcl_tutorial/01_io.s"
 .PHONY : help
 
 

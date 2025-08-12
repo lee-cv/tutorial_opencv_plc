@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tutorial_opencv_pcl",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pcl_io_tutorial::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcl_io_tutorial-Debug-e4e67a9524fd719dd9fb.json",
+					"name" : "pcl_io_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tutorial_opencv_pcl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tutorial_opencv_pcl-Debug-3d6d974a5ff368f307e8.json",
+					"name" : "tutorial_opencv_pcl",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lee/Cpp/tutorial_opencv_plc/build",
+		"source" : "/home/lee/Cpp/tutorial_opencv_plc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

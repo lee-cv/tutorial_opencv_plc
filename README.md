@@ -7,9 +7,9 @@
 
 ## 目录结构简介
 
-- `src/opencv/` ：OpenCV 基础及进阶示例代码  
-- `src/pcl/` ：PCL 点云处理示例代码  
-- `src/combined/` ：OpenCV 与 PCL 结合应用示例  
+- `src/opencv_tutorial/` ：OpenCV 基础及进阶示例代码  
+- `src/pcl_tutorial/` ：PCL 点云处理示例代码  
+- `src/combined_opencv_pcl/` ：OpenCV 与 PCL 结合应用示例  
 - `include/` ：公共工具函数头文件  
 - `data/` ：示例图片和点云数据  
 - `docs/` ：学习笔记与心得文档  
