@@ -7,7 +7,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # OpenCV 配置
-set(OpenCV_DIR /home/lee/Cpp/template_utils/cmakeTemplate/3rdparty/opencv-cuda)
+# set(OpenCV_DIR /home/lee/Cpp/template_utils/cmakeTemplate/3rdparty/opencv-cuda)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
@@ -32,10 +32,15 @@ add_executable(pcl_io_tutorial
     ${CMAKE_CURRENT_SOURCE_DIR}/src/pcl_tutorial/01_io.cpp
 )
 
+add_executable(opencv_tutorial
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/opencv_tutorial/testDemo.cpp
+)
+
 # 设置 C++17 标准
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
 set_property(TARGET pcl_io_tutorial PROPERTY CXX_STANDARD 17)
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${PCL_LIBRARIES})
+target_link_libraries(opencv_tutorial ${OpenCV_LIBS})
 target_link_libraries(pcl_io_tutorial ${PCL_LIBRARIES})
